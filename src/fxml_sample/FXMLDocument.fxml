@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="fxml_sample.FXMLDocumentController">
+   <children>
+      <TabPane layoutX="14.0" layoutY="14.0" prefHeight="580.0" prefWidth="580.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Segnala problema">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <RadioButton fx:id="altroRadioButton" layoutX="19.0" layoutY="398.0" mnemonicParsing="false" onAction="#altroButtonAction" text="Altro" />
+                        <Label layoutX="19.0" layoutY="14.0" minHeight="-Infinity" text="Segnalaci il tuo problema">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="altroTextField" alignment="TOP_LEFT" disable="true" layoutX="19.0" layoutY="440.0" prefHeight="62.0" prefWidth="559.0" promptText="Altro..." />
+                        <Button layoutX="466.0" layoutY="528.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="INVIA" />
+                        <CheckBox layoutX="19.0" layoutY="324.0" mnemonicParsing="false" text="CheckBox" />
+                        <CheckBox layoutX="19.0" layoutY="275.0" mnemonicParsing="false" text="CheckBox" />
+                        <CheckBox layoutX="19.0" layoutY="231.0" mnemonicParsing="false" />
+                        <CheckBox layoutX="297.0" layoutY="231.0" mnemonicParsing="false" text="CheckBox" />
+                        <CheckBox layoutX="297.0" layoutY="275.0" mnemonicParsing="false" text="CheckBox" />
+                        <CheckBox layoutX="297.0" layoutY="324.0" mnemonicParsing="false" text="CheckBox" />
+                        <Label layoutX="25.0" layoutY="68.0" text="Nome:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="108.0" layoutY="66.0" />
+                        <Label layoutX="301.0" layoutY="68.0" text="Cognome:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="403.0" layoutY="66.0" />
+                        <Label layoutX="29.0" layoutY="122.0" text="Mail:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="108.0" layoutY="120.0" />
+                        <TextField layoutX="403.0" layoutY="120.0" prefHeight="25.0" prefWidth="48.0" />
+                        <Label layoutX="324.0" layoutY="125.0" text="N° PC:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Problemi da risolvere">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+            <Tab text="Problemi risolti">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
